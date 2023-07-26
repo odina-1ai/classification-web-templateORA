@@ -58,9 +58,9 @@ const CLASSES_NAMES = {
   39: 'Gaura',
   40: 'Gazania',
   41: 'Geranium',
-  42: 'Giant white arum lily'
-  43: 'Globe thistle'
-  44: 'Globe-flower'
+  42: 'Giant white arum lily',
+  43: 'Globe thistle',
+  44: 'Globe-flower',
   45: 'Grape hyacinth',
   46: 'Great masterwort',
   47: 'Hard-leaved pocket orchid',
