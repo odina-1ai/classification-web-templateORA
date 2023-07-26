@@ -267,10 +267,14 @@ function showResults(imgElement, classes) {
     // classElement.className = 'cell';
     // classElement.innerText = classes[i].pred;
     // row.appendChild(classElement);
-
+    var description = "";
+    for (var j = 0; j < jsonData.length; j++){
+      if (jsonData[j]["Flower Type"] === classes[i].className) {
+        description = jsonData[j]["Description"];}
+    }
     const descriptionElement = document.createElement('div');
     descriptionElement.className = 'cell';
-    descriptionElement.innerText = 'text';
+    descriptionElement.innerText = description;
     row.appendChild(descriptionElement);
 
     probsContainer.appendChild(row);
