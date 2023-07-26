@@ -129,7 +129,7 @@ const MOBILENET_MODEL_PATH =
     // tslint:disable-next-line:max-line-length
     'model_tfjs';
 
-const IMAGE_SIZE = 192;
+const IMAGE_SIZE = 224;
 const TOPK_PREDICTIONS = 3;
 
 let mobilenet;
