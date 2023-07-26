@@ -258,7 +258,7 @@ function showResults(imgElement, classes) {
     classElement.innerText = classes[i].className;
     row.appendChild(classElement);
 
-     const probsElement = document.createElement('div');
+    const probsElement = document.createElement('div');
     probsElement.className = 'cell';
     probsElement.innerText = classes[i].probability.toFixed(3);
     row.appendChild(probsElement);
@@ -268,10 +268,10 @@ function showResults(imgElement, classes) {
     // classElement.innerText = classes[i].pred;
     // row.appendChild(classElement);
 
-    const probsElement = document.createElement('div');
-    probsElement.className = 'cell';
-    probsElement.innerText = 'text';
-    row.appendChild(probsElement);
+    const descriptionElement = document.createElement('div');
+    descriptionElement.className = 'cell';
+    descriptionElement.innerText = 'text';
+    row.appendChild(descriptionElement);
 
     probsContainer.appendChild(row);
   }
