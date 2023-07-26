@@ -95,7 +95,7 @@ const CLASSES_NAMES = {
   76: 'purple coneflower',
   77: 'red ginger',
   78: 'rose',
-  79: 'ruby-lipped cattleya'
+  79: 'ruby-lipped cattleya',
   80: 'siam tulip',
   81: 'silverbush',
   82: 'snapdragon',
