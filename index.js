@@ -306,3 +306,15 @@ const status = msg => demoStatusElement.innerText = msg;
 const predictionsElement = document.getElementById('predictions');
 
 mobilenetDemo();
+
+async function fetchJSONData() {
+  try {
+    const response = await fetch('data.json'); 
+    jsonData = await response.json();
+    console.log('JSON data:', jsonData);
+    mobilenetDemo(); 
+  } catch (error) {
+    console.error('Error fetching JSON data:', error);
+  }
+}
+fetchJSONData();
