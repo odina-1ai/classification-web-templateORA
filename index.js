@@ -138,6 +138,7 @@ const mobilenetDemo = async () => {
 
   // mobilenet = await tf.loadGraphModel(MOBILENET_MODEL_PATH, {fromTFHub: true});
   mobilenet = await tf.loadLayersModel('model_tfjs/model.json');
+  binarynet = await tf.loadLayersModel('binary_model_tfjs/model.json');
 
   // Warmup the model. This isn't necessary, but makes the first prediction
   // faster. Call `dispose` to release the WebGL memory allocated for the return
@@ -191,6 +192,23 @@ async function predict(imgElement) {
     return mobilenet.predict(batched);
   });
 
+   const binary_logits = tf.tidy(() => { //Might need to change name if it causes errors
+    // tf.browser.fromPixels() returns a Tensor from an image element.
+    const img = tf.cast(tf.browser.fromPixels(imgElement), 'float32');
+
+    const offset = tf.scalar(127.5);
+    // Normalize the image from [0, 255] to [-1, 1].X
+    // const normalized = img.sub(offset).div(offset);
+    const normalized = img;
+
+    // Reshape to a single-element batch so we can pass it to predict.
+    const batched = normalized.reshape([1, IMAGE_SIZE, IMAGE_SIZE, 3]);
+
+    startTime2 = performance.now();
+    // Make a prediction through mobilenet.
+    return binarynet.predict(batched);
+  });
+
   // Convert logits to probabilities and class names.
   const classes = await getTopKClasses(logits, TOPK_PREDICTIONS);
   const totalTime1 = performance.now() - startTime1;
@@ -199,6 +217,8 @@ async function predict(imgElement) {
       `(not including preprocessing: ${Math.floor(totalTime2)} ms)`);
 
   // Show the classes in the DOM.
+  const binary_classes = await getTopKClasses(binary_logits, 1);
+  console.log(binary_classes);
   showResults(imgElement, classes);
 }
 
