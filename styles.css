@@ -72,7 +72,7 @@ input[type="file"] {
     display: none;
 }
 
-  #files{
+  label{
     display: inline-block;
   padding: 10px 15px;
   font-size: 14px;
@@ -88,7 +88,7 @@ input[type="file"] {
     margin-top: 20px;
   }
 
-  #files:hover{
+  label:hover{
     background-color: white;
     color: #95b6a2;
   }
