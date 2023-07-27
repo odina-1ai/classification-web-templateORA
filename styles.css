@@ -82,5 +82,5 @@ input[type="file"] {
   }
 
   .img1{
-    overflow: auto;
+    width: 70%;
   }
