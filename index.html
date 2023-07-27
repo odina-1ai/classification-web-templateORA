@@ -41,22 +41,28 @@ limitations under the License.
         Flower Classification
       </header>
     </section>
-
-    
-
-
+   <section class="centering">
     <section class="container">
-
-      <section class="img1">
-          
+      <section class="img1"> 
         <img src="dataset-cover.png">
-
+       <p class='section-head'>Description</p>
+              <!-- new model card code here -->
+              <p>
+                Identifies species of flower in an image and provides 
+                information on the edibility of that flower. 
+                (want me to add a general statement about the model here as well?)
+                <!--We classify 9 categories of fruits and veggies. -->
+              </p>
       </section>
-     
-
-<section class="centering">
 
   <section>
+
+       <section>
+
+          <p class='section-head'>Status</p>
+          <div id="status"></div>
+
+        </section>
 
     <p class='section-head'>Model Output</p>
 
@@ -65,30 +71,12 @@ limitations under the License.
 
         <div id="file-container" style="display: none">
         <input class="upload" type="file" id="files" name="files[]" multiple />
-
+        </div>
          <div id="predictions"></div>
 
          <img style="display: none" id="cat" src="ai4all.jpg" width=224 height=224/>
-     
-      </div>
-
   </section>
-
-            <p class='section-head'>Description</p>
-              <!-- new model card code here -->
-              <p>
-                Identifies species of flower in an image and provides 
-                information on the edibility of that flower. 
-                (want me to add a general statement about the model here as well?)
-                <!--We classify 9 categories of fruits and veggies. -->
-              </p>
-
-        <section>
-
-          <p class='section-head'>Status</p>
-          <div id="status"></div>
-
-        </section>
+        
 
  <p class="small_text">
   to see model card click <a href="">here</a>
