@@ -125,6 +125,12 @@ const CLASSES_NAMES = {
 
  }
 
+const EDIBILITY_CLASSES = {
+  0: 'Eat',
+  1: 'Toxic',
+
+}
+
 const MOBILENET_MODEL_PATH =
     // tslint:disable-next-line:max-line-length
     'model_tfjs';
@@ -210,14 +216,14 @@ async function predict(imgElement) {
   });
 
   // Convert logits to probabilities and class names.
-  const classes = await getTopKClasses(logits, TOPK_PREDICTIONS);
+  const classes = await getTopKClasses(logits, TOPK_PREDICTIONS, CLASSES_NAMES);
   const totalTime1 = performance.now() - startTime1;
   const totalTime2 = performance.now() - startTime2;
   status(`Done in ${Math.floor(totalTime1)} ms ` +
       `(not including preprocessing: ${Math.floor(totalTime2)} ms)`);
 
   // Show the classes in the DOM.
-  const binary_classes = await getTopKClasses(binary_logits, 1);
+  const binary_classes = await getTopKClasses(binary_logits, 1, EDIBILITY_CLASSES);
   console.log(binary_classes);
   showResults(imgElement, classes);
 }
@@ -228,7 +234,7 @@ async function predict(imgElement) {
  * @param logits Tensor representing the logits from MobileNet.
  * @param topK The number of top predictions to show.
  */
-async function getTopKClasses(logits, topK) {
+async function getTopKClasses(logits, topK, classes) {
   const values = await logits.data();
 
   const valuesAndIndices = [];
@@ -248,7 +254,7 @@ async function getTopKClasses(logits, topK) {
   const topClassesAndProbs = [];
   for (let i = 0; i < topkIndices.length; i++) {
     topClassesAndProbs.push({
-      className: CLASSES_NAMES[topkIndices[i]],
+      className: classes[topkIndices[i]],
       pred: topkIndices[i],
       probability: topkValues[i]
     })
