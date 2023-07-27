@@ -305,11 +305,13 @@ function showResults(imgElement, classes, binary_class) {
 
     probsContainer.appendChild(row);
   }
+  const last_row = document.createElement('div');
+  last_row.className = 'row';
   const binaryElement = document.createElement('div');
   binaryElement.className = 'cell';
   binaryElement.innerText = binary_class[0].className;
-  row.appendChild(binaryElement);
-  
+  last_row.appendChild(binaryElement);
+  probsContainer.appendChild(last_row);
   predictionContainer.appendChild(probsContainer);
 
   predictionsElement.insertBefore(
