@@ -68,6 +68,9 @@
     align-items: center;
     
   }
+input[type="file"] {
+    display: none;
+}
 
   #files{
     display: inline-block;
