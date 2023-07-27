@@ -15,22 +15,121 @@
  * =============================================================================
  */
 const CLASSES_NAMES = {
-  0: 'apple',
-  1: 'avocado',
-  2: 'banana',
-  3: 'carrot',
-  4: 'lettuce',
-  5: 'onion',
-  6: 'pepper',
-  7: 'potato',
-  8: 'tomato',
+
+  0: 'Alpine sea holly',
+  1: 'Anthurium',
+  2: 'Artichoke',
+  3: 'Azalea',
+  4: 'Balloon Flower',
+  5: 'Barberton Daisy',
+  6: 'Bee Balm',
+  7: 'Bird of paradise',
+  8: 'Bishop of llandaf',
+  9: 'Black-eyed susan',
+  10: 'Blackberry lily',
+  11: 'Blanket Flower',
+  12: 'Bolero deep blue',
+  13: 'Bougainvillea',
+  14: 'Bromelia',
+  15: 'Buttercup',
+  16: 'Californian poppy',
+  17: 'Camellia',
+  18: 'Canna lily',
+  19: 'Canterbury bells',
+  20: 'Cape flower',
+  21: 'Carnation',
+  22: 'Cautleya Spicata',
+  23: 'Clematis',
+  24: 'Colts foot',
+  25: 'Columbine',
+  26: 'Common dandelian',
+  27: 'Common tulip',
+  28: 'Corn poppy',
+  29: 'Cosmos',
+  30: 'Cyclamen',
+  31: 'Daffodil',
+  32: 'Daisy',
+  33: 'Desert-rose',
+  34: 'Fire lily',
+  35: 'Foxglove',
+  36: 'Frangipani',
+  37: 'Fritillary',
+  38: 'Garden phlox',
+  39: 'Gaura',
+  40: 'Gazania',
+  41: 'Geranium',
+  42: 'Giant white arum lily',
+  43: 'Globe thistle',
+  44: 'Globe-flower',
+  45: 'Grape hyacinth',
+  46: 'Great masterwort',
+  47: 'Hard-leaved pocket orchid',
+  48: 'Hibiscus',
+  49: 'Hippeastrum',
+  50: 'Iris',
+  51: 'Japanese anemone',
+  52: 'King protea',
+  53: 'Lenten rose',
+  54: 'Lilac hibiscus',
+  55: 'Lotus',
+  56: 'Love in the mist',
+  57: 'Magnolia',
+  58: 'Mallow',
+  59: 'Marigold',
+  60: 'Mexican petunia',
+  61: 'Monkshood',
+  62: 'Moon orchid',
+  63: 'Morning glory',
+  64: 'Orange dahlia',
+  65: 'Osteospermum',
+  66: 'Passion flower',
+  67: 'Peruvian lily',
+  68: 'Petunia',
+  69: 'Pincushion flower',
+  70: 'Pink primrose',
+  71: 'Pink quill',
+  72: 'Pink-yellow dahlia',
+  73: 'Poinsettia',
+  74: 'Primula',
+  75: 'Prince of wales feathers',
+  76: 'Purple coneflower',
+  77: 'Red ginger',
+  78: 'Rose',
+  79: 'Ruby-lipped cattleya',
+  80: 'Siam tulip',
+  81: 'Silverbush',
+  82: 'Snapdragon',
+  83: 'Spear thistle',
+  84: 'Spring crocus',
+  85: 'Stemless gentian',
+  86: 'Sunflower',
+  87: 'Sweet pea',
+  88: 'Sweet william',
+  89: 'Sword lily',
+  90: 'Thorn apple',
+  91: 'Tiger lily',
+  92: 'Toad lily',
+  93: 'Tree mallow',
+  94: 'Tree poppy',
+  95: 'Trumpet creeper',
+  96: 'Wallflower',
+  97: 'Water lily',
+  98: 'Watercress',
+  99: 'Wild geranium',
+  100: 'Wild pansy',
+  101: 'Wild rose',
+  102: 'Windflower',
+  103: 'Yellow iris',
+  
+
+
  }
 
 const MOBILENET_MODEL_PATH =
     // tslint:disable-next-line:max-line-length
     'model_tfjs';
 
-const IMAGE_SIZE = 128;
+const IMAGE_SIZE = 224;
 const TOPK_PREDICTIONS = 3;
 
 let mobilenet;
@@ -159,15 +258,24 @@ function showResults(imgElement, classes) {
     classElement.innerText = classes[i].className;
     row.appendChild(classElement);
 
-    // const predElement = document.createElement('div');
-    // classElement.className = 'cell';
-    // classElement.innerText = classes[i].pred;
-    // row.appendChild(classElement);
-
     const probsElement = document.createElement('div');
     probsElement.className = 'cell';
     probsElement.innerText = classes[i].probability.toFixed(3);
     row.appendChild(probsElement);
+
+    // const predElement = document.createElement('div');
+    // classElement.className = 'cell';
+    // classElement.innerText = classes[i].pred;
+    // row.appendChild(classElement);
+    var description = "";
+    for (var j = 0; j < jsonData.length; j++){
+      if (jsonData[j]["Flower Type"] === classes[i].className) {
+        description = jsonData[j]["Description"];}
+    }
+    const descriptionElement = document.createElement('div');
+    descriptionElement.className = 'cell';
+    descriptionElement.innerText = description;
+    row.appendChild(descriptionElement);
 
     probsContainer.appendChild(row);
   }
@@ -207,3 +315,15 @@ const status = msg => demoStatusElement.innerText = msg;
 const predictionsElement = document.getElementById('predictions');
 
 mobilenetDemo();
+
+async function fetchJSONData() {
+  try {
+    const response = await fetch('data.json'); 
+    jsonData = await response.json();
+    console.log('JSON data:', jsonData);
+    mobilenetDemo(); 
+  } catch (error) {
+    console.error('Error fetching JSON data:', error);
+  }
+}
+fetchJSONData();

@@ -14,70 +14,81 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================
 -->
-
+<!-- commit test -->
 <!doctype html>
 
 <head>
+
   <title>Project Classification+X</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="shared/tfjs-examples.css" />
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowa-dex</title>
+    <link rel="stylesheet" href="shared/tfjs-examples.css"/>    
+    <link rel="stylesheet" href="styles.css">
+
+
 </head>
-
-<style>
-  .pred-container {
-    margin-bottom: 20px;
-  }
-
-  .pred-container > div {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: top;
-  }
-
-  .row {
-    display: table-row;
-  }
-  .cell {
-    display: table-cell;
-    padding-right: 20px;
-  }
-
-  #file-container {
-    margin-bottom: 20px;
-  }
-</style>
 
 <body>
   <div class="tfjs-example-container">
     <section class='title-area'>
-      <h1>Fruits and Veggies Classification</h1>
+      <header>
+        <h1>Flower Classification</h1>
+      </header>
     </section>
 
-    <section>
-      <img src="dataset.jpg" style="width: 50%;">
-      <p class='section-head'>Description</p>
-      <p>
-        We classify 9 categories of fruits and veggies. 
-      </p>
-    </section>
 
-    <section>
-      <p class='section-head'>Status</p>
-      <div id="status"></div>
-    </section>
+    <section class="container">
 
-    <section>
-      <p class='section-head'>Model Output</p>
+          <div class="upload"> Upload
 
-      <div id="file-container" style="display: none">
-        Upload an image: <input type="file" id="files" name="files[]" multiple />
-      </div>
+              <div id="file-container" style="display: none">
+                Upload: <input type="file" id="files" name="files[]" multiple />
 
-      <div id="predictions"></div>
+              </div>
+          </div>
 
-      <img style="display: none" id="cat" src="ai4all.jpg" width=224 height=224 />
-    </section>
+        <section class="img1">
+          
+            <img src="dataset.jpg">
+
+        </section>
+
+
+<section class="centering">
+
+  <section>
+
+    <p class='section-head'>Model Output</p>
+
+    <div id="output-container"></div>
+    <div id="predictions"></div>
+
+    <img style="display: none" id="cat" src="ai4all.jpg" width=224 height=224/>
+
+  </section>
+
+            <p class='section-head'>Description</p>
+              <!-- new model card code here -->
+              <p>
+                Identifies species of flower in an image and provides 
+                information on the edibility of that flower. 
+                (want me to add a general statement about the model here as well?)
+                <!--We classify 9 categories of fruits and veggies. -->
+              </p>
+
+        <section>
+
+          <p class='section-head'>Status</p>
+          <div id="status"></div>
+
+        </section>
+
+</section>
+
+
+  </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2"></script>
     <script src="index.js"></script>
