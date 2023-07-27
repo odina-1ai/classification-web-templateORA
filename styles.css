@@ -12,13 +12,15 @@
   .row {
 
     display: table-column;
-    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
 
   }
   .cell {
     display: table-cell;
     padding-right: 20px;
-    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     
   }
 
