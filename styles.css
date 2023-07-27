@@ -11,7 +11,7 @@
 
   .row {
 
-    display: table-column;
+    display: table-row;
 
   }
   .cell {
