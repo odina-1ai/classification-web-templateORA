@@ -1,0 +1,13 @@
+[
+ {
+   "Flower Type": "Eat",
+   "Description": "Safe to consume.",
+   "0 = eat | 1=toxic": 0
+ },
+ 
+ {
+   "Flower Type": "Toxic",
+   "Description": "Do not consume because of adverse side effects. ",
+   "0 = eat | 1=toxic": 1
+ }
+]
