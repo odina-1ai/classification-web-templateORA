@@ -25,7 +25,7 @@ const CLASSES_NAMES = {
 
 const MOBILENET_MODEL_PATH =
     // tslint:disable-next-line:max-line-length
-    'model_tfjs';
+    'binary_model_tfjs';
 
 const IMAGE_SIZE = 224;
 const TOPK_PREDICTIONS = 3;
@@ -35,7 +35,7 @@ const mobilenetDemo = async () => {
   status('Loading model...');
 
   // mobilenet = await tf.loadGraphModel(MOBILENET_MODEL_PATH, {fromTFHub: true});
-  mobilenet = await tf.loadLayersModel('model_tfjs/model.json');
+  mobilenet = await tf.loadLayersModel('binary_model_tfjs/model.json');
 
   // Warmup the model. This isn't necessary, but makes the first prediction
   // faster. Call `dispose` to release the WebGL memory allocated for the return
