@@ -19,11 +19,12 @@ limitations under the License.
 
 <head>
 
-  <title>Flower Class</title>
+
  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowa-dex</title>
+    <title>Flower Class</title>
+    <link rel="icon" href="favicon-16x16.png">
     <link rel="stylesheet" href="shared/tfjs-examples.css"/>    
     <link rel="stylesheet" href="styles.css">
 
@@ -35,6 +36,7 @@ limitations under the License.
 
   <div class="tfjs-example-container">
     <section class='title-area'>
+
       <header>
         Flower Classification
       </header>
@@ -47,14 +49,27 @@ limitations under the License.
 
       <section class="img1">
           
-        <img src="dataset.jpg">
+        <img src="dataset-cover.png">
 
+      
+     <!-- <p class='section-head'>Description</p>
+      <!-- new model card code here -->
+      <p>
+        Identifies species of flower in an image and provides information on the edibility of that flower. 
+        (want me to add a general statement about the model here as well?)
+      </p> -->
+    </section>
     </section>
 
           <div class="upload"> Upload
 
-              <div id="file-container" style="display: none">
-                Upload: <input type="file" id="files" name="files[]" multiple />
+
+      <div id="output-container"></div>
+
+      <div id="file-container" style="display: none">
+        Upload an image: <input type="file" id="files" name="files[]" multiple />
+      </div>
+
 
               </div>
           </div>
