@@ -19,11 +19,11 @@ limitations under the License.
 
 <head>
 
-  
+
  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowa-dex</title>
+    <title>Flower Class</title>
     <link rel="icon" href="favicon-16x16.png">
     <link rel="stylesheet" href="shared/tfjs-examples.css"/>    
     <link rel="stylesheet" href="styles.css">
@@ -32,28 +32,37 @@ limitations under the License.
 </head>
 
 <body>
+
+
   <div class="tfjs-example-container">
     <section class='title-area'>
-      <h1>Flower Classification</h1>
+
+      <header>
+        Flower Classification
+      </header>
     </section>
 
-    <section>
-      <img src="dataset-cover.png" style="width: 50%;">
-      <p class='section-head'>Description</p>
+    
+
+
+    <section class="container">
+
+      <section class="img1">
+          
+        <img src="dataset-cover.png">
+
+      
+     <!-- <p class='section-head'>Description</p>
       <!-- new model card code here -->
       <p>
         Identifies species of flower in an image and provides information on the edibility of that flower. 
         (want me to add a general statement about the model here as well?)
-      </p>
+      </p> -->
+    </section>
     </section>
 
-    <section>
-      <p class='section-head'>Status</p>
-      <div id="status"></div>
-    </section>
+          <div class="upload"> Upload
 
-    <section>
-      <p class='section-head'>Model Output</p>
 
       <div id="output-container"></div>
 
@@ -61,10 +70,46 @@ limitations under the License.
         Upload an image: <input type="file" id="files" name="files[]" multiple />
       </div>
 
-      <div id="predictions"></div>
 
-      <img style="display: none" id="cat" src="ai4all.jpg" width=224 height=224 />
-    </section>
+              </div>
+          </div>
+
+       
+
+
+<section class="centering">
+
+  <section>
+
+    <p class='section-head'>Model Output</p>
+
+    <div id="output-container"></div>
+    <div id="predictions"></div>
+
+    <img style="display: none" id="cat" src="ai4all.jpg" width=224 height=224/>
+
+  </section>
+
+            <p class='section-head'>Description</p>
+              <!-- new model card code here -->
+              <p>
+                Identifies species of flower in an image and provides 
+                information on the edibility of that flower. 
+                (want me to add a general statement about the model here as well?)
+                <!--We classify 9 categories of fruits and veggies. -->
+              </p>
+
+        <section>
+
+          <p class='section-head'>Status</p>
+          <div id="status"></div>
+
+        </section>
+
+</section>
+
+
+  </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2"></script>
     <script src="index.js"></script>

@@ -1,40 +1,145 @@
 <!-- Model Card Draft
 
-/////template link: https://huggingface.co/docs/hub/model-cards
-/////ADD HTML TAGS
 
-(Possible name: Flowadex, Flowa-dex(not taken or copyright)) -->
-
-<h1>Model Title: Flower Identification Model</h1>
-<h2>Project Title: Rubber Duckies Model Card</h2>
+(More details about images we choose to take around campus PLEASE)
+https://www.kaggle.com/datasets/msheriey/104-flowers-garden-of-eden
 
 
-<p class = 'section-head'> Purpose:</p>
-<p> Meant to be used as an educational tool for users to determine whether flowers are posionous or not. <p>
-<p class = 'section-head'</p>
-<p> Current limitations: Flowers can be both posionous and edible, depending on dosage.
-- certain parts of flowers can be poisonous and other parts are not( are these concerns still relevant???) </p>
 
-<p>(What type of neural network/model? What functions are being used? One's binary and one's an image
-  classifier???) - Classification Model <br><br>
 
-Hyperparameters:<br>
-Batch Size:<br>
-Epochs:<br>
-Learning Rate:<br><br>
+-->
 
-Datasets used to train the model: 104 Flowers: Garden of Eden Kaggle Dataset<br>
+<!--
+Copyright 2018 Google LLC. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+==============================================================================
+-->
+<!-- commit test -->
+<!doctype html>
+
+<head>
+
+  <title>Flower Class</title>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowa-dex</title>
+    <link rel="stylesheet" href="shared/tfjs-examples.css"/>    
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+
+  <div class="tfjs-example-container">
+    <section class='title-area'>
+      <header>
+        Flower Classification
+      </header>
+    </section>
+
+    
+
+
+    <section class="container">
+
+
+<section class="centering">
+
+  <section>
+            <p class='section-head'>Purpose</p>
+              <!-- new model card code here -->
+              <p>
+                Meant to be used as an educational tool for users to determine whether flowers are posionous or not. 
+                Current limitations: Flowers can be both posionous and edible, depending on dosage.
+                - certain parts of flowers can be poisonous and other parts are not
+              </p>
+
+              <p class='section-head'>Hyperparameters:</p>
+              <p>
+                
+              </p>
+
+              <p class='section-head'>Batch Size:</p>
+              <p>
+                
+              </p>
+
+              <p class='section-head'>Epochs:</p>
+              <p>
+                
+              </p>
+
+              <p class='section-head'>Learning Rate:</p>
+              <p>
+                
+              </p>
+
+              <p class='section-head'>What type of neural network/model? What functions are being used?</p>
+              <p>
+                Classification model!
+              </p>
+
+              <p class='section-head'>Datasets:</p>
+              <p>
+                104 Flowers: Garden of Eden Kaggle Dataset<br>
 104 Classes<br>
-224x224x3 (what type of file? jpg? jpeg? png) Images<br>
+192x192x3<br>
 - 104 Training Images<br>
 - 7382 Test Images<br>
-- 104 Validation Images<br><br>
+- 104 Validation Images<br>
+https://www.kaggle.com/datasets/msheriey/104-flowers-garden-of-eden
+              </p>
 
-(More details about images we choose to take around campus PLEASE)<br>
-https://www.kaggle.com/datasets/msheriey/104-flowers-garden-of-eden<br><br>
+              <p class='section-head'>Training Results: </p>
+              <p>
+                
+              </p>
 
-Training Results: <br>
-Testing Results:<br>
-Validation Results:<br><br>
+              <p class='section-head'>Testing Results:</p>
+              <p>
+                
+              </p>
+              <p class='section-head'>Validation Results:</p>
+              <p>
+                
+              </p>
+              <p class='section-head'>License Rights:</p>
+              <p>
+                Copyright 2018 Google LLC. All Rights Reserved.
 
-  (Cite the Model Card Template Here so we don't get sued...) </p>
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+              </p>
+
+</section>
+
+
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2"></script>
+    <script src="index.js"></script>
+  </div>
+</body>
