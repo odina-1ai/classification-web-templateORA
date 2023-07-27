@@ -216,7 +216,7 @@ mobilenetDemo();
 
 async function fetchJSONData() {
   try {
-    const response = await fetch('data.json'); 
+    const response = await fetch('binarydata.json'); 
     jsonData = await response.json();
     console.log('JSON data:', jsonData);
     mobilenetDemo(); 
