@@ -225,7 +225,7 @@ async function predict(imgElement) {
   // Show the classes in the DOM.
   const binary_classes = await getTopKClasses(binary_logits, 1, EDIBILITY_CLASSES);
   console.log(binary_classes);
-  showResults(imgElement, classes);
+  showResults(imgElement, classes, binary_classes);
 }
 
 /**
@@ -266,7 +266,7 @@ async function getTopKClasses(logits, topK, classes) {
 // UI
 //
 
-function showResults(imgElement, classes) {
+function showResults(imgElement, classes, binary_class) {
   const predictionContainer = document.createElement('div');
   predictionContainer.className = 'pred-container';
 
@@ -305,6 +305,11 @@ function showResults(imgElement, classes) {
 
     probsContainer.appendChild(row);
   }
+  const binaryElement = document.createElement('div');
+  binaryElement.className = 'cell';
+  binaryElement.innerText = binary_class[0].className;
+  row.appendChild(binaryElement);
+  
   predictionContainer.appendChild(probsContainer);
 
   predictionsElement.insertBefore(
