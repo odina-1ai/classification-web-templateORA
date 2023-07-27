@@ -1,0 +1,522 @@
+[
+ {
+   "Flower Type": "Alpine sea holly",
+   "Description": "The immature leaves and roots of this flower are both edible. When the roots are boiled or roasted they taste like chesnuts. The roots also can help cure weakness from illiness.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Anthurium ",
+   "Description": "This flower is known as a flamingo flowers or pigtail plants. They are toxic to the point that if its sap is touched it can cause a rash to the skin.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Artichoke",
+   "Description": "This plant has a lot of nutrients for your body. It can reduce nausea, vomiting, and Mucles spasms. Artichokes also protects ones own liver",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Azalea",
+   "Description": "Ingesting large amounts of any part of the Azalea plant or honey can lead to life-threatening symptoms. ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Balloon flower",
+   "Description": "The roots of balloon flowers are edible. The root is very common in Asian cuisine. The root it self has been used to treat hypotension, lipid reduction, atherosclerosis, inflammation, relieving cough and phlegm, promoting cholic acid secretion, and as an antioxidant",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Barberton daisy",
+   "Description": "The plant it self does not have many benifits to eating it. It can also might by toxic to childern as well",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Bee balm",
+   "Description": "This plants leaves is commonly used for making tea. The plant can be used to expel gas, to relieve nausea, in menstrual cramps, and as an expectorant to soothe sore throats Do not eat the root of this plant. ",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Bird of paradise",
+   "Description": "The plants leaves and stems are toxic to humans. Ingestion of bird of paradise seeds can cause dizziness, vomiting, diarrhea and drowsiness in humans.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Bishop of llandaff",
+   "Description": "This plant is also called dahlia. The plants petals are edible but the tubes of the flower are not edible for the tubes have a natural antibiotic properties. that can cure many illnesses",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Black-eyed susan",
+   "Description": "For the purpose of eating the plant can be deadly. Its more usefull in medical purposes. such as treating cold, dropsyness, and worms in children",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Blackberry lily",
+   "Description": "The plant has been used as medicine in the past. However the seeds are of this plant can be poisonus ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Blanket flower",
+   "Description": "Brushing against the steams and leaves can lead to skin irritation. However, Dreid seeds are edible. ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Bolero deep blue",
+   "Description": "Commonly called Bedding Lisianthus. They are non-toxic plant. Commonly used in bouquet.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Bougainvillea",
+   "Description": "The plant is considered to be nontoxic. However, parts of the plant are. The sap can cause simular problems as poison oak or poison ivy.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Bromelia",
+   "Description": "This plant is concidered to be non-toxic. A pineapple is concired as a bromeliad",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Buttercup",
+   "Description": "All known speices of buttercups are poisonous.avoid touching this plant. It can prevent healing of blisters and burns.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Californian poppy",
+   "Description": "The roots of this plants can encourge sleep for oneself. This still can make the plant toxic if its not properly prepaered.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Camellia",
+   "Description": "This plant is common in makeing teas but the plant it self still can be eaten. The plant can be used to spice up alot of different types of tea.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Canna lily",
+   "Description": "This plant is rich in alot of nutrents. It can help clearing up skin and heart health. You cook the bulds and roots which are edible.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Canterbury bells",
+   "Description": "This plant is edible. They are most commonly used to make green and blue dyes. The flower leaves and roots can be eaten",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Cape flower",
+   "Description": "When this plant is consumed it can cause depression, ataxia, seizures, and hypotension. This is rarely fatal.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Carnation",
+   "Description": "This plant is edible. Its flower can be eaten whole or the peatals can be used in as a garniish or added as a ingredent. Its commonly called the god flower.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Cautleya spicata",
+   "Description": "This plants pith pof the stem is eaten as a vegetable. Along with the juice of plant can treat stomach disorders.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Clematis",
+   "Description": "This plant is poisonous. Even though this plants toxin is mild you can be symptomatic by just touching the flower.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Colt's foot",
+   "Description": "This plant is both edible and used in medicine. The flower buds can be cooked or eaten raw. It can do alot of things for ones respatory system",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Columbine",
+   "Description": "One should be careful hadle this plant with care but its is edible for humans and animals",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Common dandelion",
+   "Description": "This plant should be eaten in small amounts but is genraly healthy non the less. You can even make tea with six flowers or make a coffee like substance brew the root, both in hot water.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Common tulip",
+   "Description": "This plant is extremely toxic. The bulb being the most toxic part . This can lead to dizziness, nausea, abdominal pain and, rarely, convulsions and death.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Corn poppy",
+   "Description": "The seeds of the corn poppy flower have no traces of alkaloids. Making this flower safe to eat. The leaves raw or cooked can be used like spinach. Do not eat the leaves if the bud of the flower is formed",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Cosmos",
+   "Description": "This plant is not toxic to one self. However, if you were to consume this plant it will lead to mild discomfort in the stomach",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Cyclamen ",
+   "Description": "This plant is harmful to you and your pets. this can lead to heart rhythm abnormalities, seizures, and even death. ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Daffodil",
+   "Description": "This plants parts is all toxic. The bulb of the plant contains the highest amount of toxins. eating this causes nausea, vomiting, abdominal pain, and diarrhea. These symptoms usually last about 3 hours.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Daisy",
+   "Description": "This plant is toxic to childrens. This can lead to skin rashes and blistering. but this can cause many different reations",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Desert-rose",
+   "Description": "This plant is toxic to one self. Everthing on this plant can cause slow heart beat, low blood pressure, lethargy, dizziness and stomach upset. Warning: Seek urgent medical attention for any ingestion ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Fire lily",
+   "Description": "This plant is really toxic. The bulbs of the plant is the most toxic part. even to the touch the plant can effect people",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Foxglove",
+   "Description": "this plant contains cardiac glycosides. Which are toxic to humans and ingestion of any parts, mainly the leaves, can result to severe poisoning ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Frangipani",
+   "Description": "This plant is very poisonnous. if you start to eat this plant. it can cause one to be sick shortly after. The sap of this flower is poisonus.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Fritillary",
+   "Description": "All This plant is toxic. The bulb of this plant can be extremly toxic.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Garden phlox",
+   "Description": "This plant is edible. The flower is slightly spicety and they are oftern used in salads",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "gaura",
+   "Description": "gaura: This plant is edible and have medicinal properties. The roots can be used to treat snakebites as long as dressing burns/inflammation",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Gazania",
+   "Description": "This plant is not considered toxic. However you should avoid eating these cause it can cause disconfort in ones stomach",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Geranium",
+   "Description": "This plant is completely safe to eat. This can make a good tea or add cent to ones own meal.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Giant white arum lily",
+   "Description": "This plant is very poisonous to humans and wildlife. The plant can cause skin irritation and illness. ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Globe thistle",
+   "Description": "This plant is edible. The leaf mid rib of the larger, deeply lobed leaves can be trimmed and eaten. Along with the young flower stalk shoots can be peeled and eaten raw or cooked. ",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Globe-flower",
+   "Description": "This plant is edible. It can also be used to treat diseases that is caused by vitamin c deficiency such as scurvy",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Grape hyacinth",
+   "Description": "This plant can be both toxic and edible. The buds and the flower it self is edible but do not use anything else for they can be toxic towards you ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Great masterwort",
+   "Description": "This plant is commonly used to relive muscle cramps, stomach disorders, digestive problems, diarrhea, and swelling of the tissue that lines the stomach and intestines",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Hard-leaved pocket orchid",
+   "Description": "This plants flower petals are safe to consume. They are common in dishes such as salads and stir-fry.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Hibiscus",
+   "Description": "This plants foliage and flowers are edible. It can be eaten raw or cooked. It can has a tart flavory behined it makeing it good in salads",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Hippeastrum ",
+   "Description": "This plant is not edible. If you were to ingest the bulb or sap can lead tonausea, vomiting and diarrhoea ",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Iris",
+   "Description": "The iris is toxic. The highest concentrate of toxins are located in the bulb and the underground steam. However, the entire steam is toxic to consume.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Japanese anemone",
+   "Description": "This plant is toxic when ingested. If proporly prepared it can be used as a anti-inflammatory, antioxidant, and antimicrobial activities.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "King protea",
+   "Description": "This plant is toxic for one to consume. This encluides everyhting in the plant. The bulbs of the flower is the most toxic bit",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Lenten rose",
+   "Description": "This plant is poisonus for one to consume. Even the sap can cause irritation when it comes in contact with the skin",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Lilac hibiscus",
+   "Description": "It is best to avoid eating the flower if possible. You maybe able to consume this flower depending on the location but not engough reasearch has gone into it.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Lotus",
+   "Description": "This flower is poisonus to consume. If one were to consume this flower it can cause vomiting, diarrhea, and even death. THis plant is commonly viewed a sacred in many cultures",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Love in the mist",
+   "Description": "This plant is edible. Its commonly grown for its seeds which is commonly used as a spice in food to enhance its flavor.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Magnolia",
+   "Description": "This plant is edible. magnolia flower petals are the thing you should eat. as soon as the bud blooms is when you should consume the flower.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Mallow",
+   "Description": "This plant is very edible. Its seeds are edible and snaked on commonly. Its said that its seeds taste like cheese. its leaves have spinach properties which means it can be useed to thicken soup",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Marigold",
+   "Description": "This plant is edible and safe for you to consume. it can lead to many benifits such as alleviates cramps and aids digestion. It can also lead to relife in digesting ",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Mexican petunia",
+   "Description": "This plant is not know for being eaten. However it is used to cure flu, asthma, fever, bronchitis, high blood pressure, eczema, and diabetes.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Monkshood",
+   "Description": "This plant should not be eaten. all partas of this plant are poisonous. The roots and seeds are the most poisonus ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Moon orchid",
+   "Description": "This plant are edible and can be used for consumption. You can use the petals in a stir-fry and in candy. They have a crisp and fresh taste.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Morning glory",
+   "Description": "This plants stalks and shoots are edible. washing and steam can lead to it tasting sweat. it was used in the traditional medicines.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Orange dahlia",
+   "Description": "This plants flower and tubes are edible. The flavor of this flower can be depending on the soil and conditions it grew in",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Osteospermum",
+   "Description": "This plant is edible for people to consume. Its consided as the best and easiest flower to consume",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Passion flower",
+   "Description": "This flower is edible. However I would say you should wait until the flower turns into fruit. but you can also make tea out of this petals from the flower",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Peruvian lily",
+   "Description": "This plant is not something you should touch, It can cause allergic reation just be touching. If you were to eat the plant it can cause nausea, vomiting and diarrhoea",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Petunia",
+   "Description": "This flower should not be eaten. There are a few of these plants that are edible but you should just avoid eating this plant for the risk is not worth it",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Pincushion flower",
+   "Description": "This plant is edible. it can be used in salads and adds nice color to your salads.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Pink primrose",
+   "Description": "This plant is very common to eat. The roots can be used as a peppery flavored vegtible along with the petals can also be eaten",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Pink quill",
+   "Description": "Edible: This plant can cause distress if you were to eat it. It can though help with Fever, Kidney problems, Urinary tract problems.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Pink-yellow dahlia",
+   "Description": "Not poisonous to humans and are edible. Commonly used to treat things such as epilepsy and skin issues.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Poinsettia",
+   "Description": "Not poisonous and are edible. Commonly used to treat fever, stimulate breast milk production, and cause an abortion",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Primula",
+   "Description": "Poisnous if leaves have tiny hairs and can cause immediate irritation, also forming blisters. Commonly used to treat spasms, cramps, paralysis, and rheumatic pains. ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Prince of wales feathers",
+   "Description": "Not toxic at all and is edible. Commonly used to treat diarrhoea, bloodshot eyes, hypertension, cataracts, poision from snake bites, and blurry vision",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Purple coneflower",
+   "Description": "Commonly used to treat common colds, coughs, bronchitis, respiratory infections, and inflammatry conditios.  Safe to eat, if unusual symptons arise after eating it, it may be due to previous health conditions or when taking specific medication. ",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Red ginger",
+   "Description": "All parts of Red Ginger are mildly toxic and are known to cause caradic effects, skin irritations, and eye irritations.Can be used to treat headaches, indigestion, nausea, vomiting, and cancer. ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Rose",
+   "Description": "Known to help uplift spirits, sore throats, and colds. Roses are edible and can be used for a number of things",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Ruby-lipped cattleya",
+   "Description": "Not poisonous and are edible for humans. Commonly used as decorations, not known to be used for medical purposes ",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Siam tulip",
+   "Description": "Purley decorative plant. ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Silverbush",
+   "Description": "Not reported to be toxic and are edible, but have a sour taste. Commonly used to treat coughs, colds, asthma, high blood pressure, and chest issues",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Snapdragon",
+   "Description": "Commonly used to treat numerous symptoms and diseases such as gum scurvy, hemorrhoids, and tumors. Non-toxic and edible to humans",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Spear thistle",
+   "Description": "Used to treat bleeding piles and rheumatic joints. Not poisonous, but can cause sickness if ingested. ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Spring crocus",
+   "Description": "Not poisonous, but eating can cause vomiting and diarrhea. Commonly used as an anti-inflammatory ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Stemless gentian",
+   "Description": "Used to treat various sicknesses such as dirrhea, fever, hearburn, vomiting, and sinus infection. Not poisonous and are edible but due to its bitter taste humans tend not to eat it",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Sunflower",
+   "Description": "Mature sunflower seeds are safe to eat but every other part can be harmful when ingested. Commonly used for pulmonary affections ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Sweet pea",
+   "Description": "Believed to have anti-inflammatory and antioxidant benefits which have been used for centuries. Eating in large quantities can result in paralytix syndrome ",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Sweet william",
+   "Description": "This plant is toxic. Its toxins inside this plant is not extreme but it can cause slight problems in the distive track",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Sword lily",
+   "Description": "This plant is toxic. Most of the plant is toxic and should not be eaten. The most toxic part of the plant is the bulbs",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Thorn apple",
+   "Description": "This plant is one of the most impartant medical plant. However not preparing this plant propperly can make the plant toxic",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Tiger lily",
+   "Description": "This flower is edible. The flavor of this flower and bulbs are similar to turnips. They are commonly rosted. The petals of the flower is sweat to eat. ",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Toad lily",
+   "Description": "This flower is toxic to consume. all parts of the flower can cause illness such as  nausea, headache, vomiting and drowsiness.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Tree mallow",
+   "Description": "This flower is edible. It doesnt bring its own flavor and will take on what ever flavor you pare it with",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Tree poppy",
+   "Description": "This plants sap is poisonus to consume. It is commonly that is can be used in medicine but withour propper care it can be toxic and possibly deadly",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Trumpet creeper",
+   "Description": "This plant should not be eaten or touched. If touched it can cause redness and swelling.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Wallflower",
+   "Description": "This plant poisons the air. So you should stay away from these flowers if possible. if not it can cause allergy symptoms, hormone disruption, coughing, stomach upset, and more.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Water lily",
+   "Description": "This plant is extremely edible for one self. The flower seeds roots and young leaves can be consumed. cooked or uncooked. The roots should be peeled like a potato. You can then make it into a flower",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Watercress",
+   "Description": "Safe to eat and is commonly used with other herbs to treat infections to kidney, bladder, or urethra, airway infection, and others.",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Wild geranium",
+   "Description": "Are safe to eat but in moderation. Some of its essential oils may cause mild skin irratation. ",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Wild pansy",
+   "Description": "Safe to eat and is even used to garnish some foods. Additionally it has some dertamological properties, used specifically in cases of seborrhoeic skin disorders ",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Wild rose",
+   "Description": "All rose petals are edible. Make sure one washes the rose before consuming for some farmers may place pestacided on to the rose",
+   "0 = eat | 1=toxic": 0
+ },
+ {
+   "Flower Type": "Windflower",
+   "Description": "Posininous if eaten but are also known to relax spasms.",
+   "0 = eat | 1=toxic": 1
+ },
+ {
+   "Flower Type": "Yellow iris",
+   "Description": "Are known to be posinious. Its sap can cause skin irritation, can be manually removed but must use gloves and long sleeves. ",
+   "0 = eat | 1=toxic": 1
+ }
+]

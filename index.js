@@ -58,9 +58,9 @@ const CLASSES_NAMES = {
   39: 'Gaura',
   40: 'Gazania',
   41: 'Geranium',
-  42: 'Giant white arum lily'
-  43: 'Globe thistle'
-  44: 'Globe-flower'
+  42: 'Giant white arum lily',
+  43: 'Globe thistle',
+  44: 'Globe-flower',
   45: 'Grape hyacinth',
   46: 'Great masterwort',
   47: 'Hard-leaved pocket orchid',
@@ -68,58 +68,58 @@ const CLASSES_NAMES = {
   49: 'Hippeastrum',
   50: 'Iris',
   51: 'Japanese anemone',
-  52: 'king protea',
-  53: 'lenten rose',
-  54: 'lilac hibiscus',
-  55: 'lotus',
-  56: 'love in the mist',
-  57: 'magnolia',
-  58: 'mallow',
-  59: 'marigold',
-  60: 'mexican petunia',
-  61: 'monkshood',
-  62: 'moon orchid',
-  63: 'morning glory',
-  64: 'orange dahlia',
-  65: 'osteospermum',
-  66: 'passion flower',
-  67: 'peruvian lily',
-  68: 'petunia',
-  69: 'pincushion flower',
-  70: 'pink primrose',
-  71: 'pink quill',
-  72: 'pink-yellow dahlia',
-  73: 'poinsettia',
-  74: 'primula',
-  75: 'prince of wales feathers',
-  76: 'purple coneflower',
-  77: 'red ginger',
-  78: 'rose',
-  79: 'ruby-lipped cattleya'
-  80: 'siam tulip',
-  81: 'silverbush',
-  82: 'snapdragon',
-  83: 'spear thistle',
-  84: 'spring crocus',
-  85: 'stemless gentian',
-  86: 'sunflower',
-  87: 'sweet pea',
-  88: 'sweet william',
-  89: 'sword lily',
-  90: 'thorn apple',
-  91: 'tiger lily',
-  92: 'toad lily',
-  93: 'tree mallow',
-  94: 'tree poppy',
-  95: 'trumpet creeper',
-  96: 'wallflower',
-  97: 'water lily',
-  98: 'watercress',
-  99: 'wild geranium',
-  100: 'wild pansy',
-  101: 'wild rose',
-  102: 'windflower',
-  103: 'yellow iris',
+  52: 'King protea',
+  53: 'Lenten rose',
+  54: 'Lilac hibiscus',
+  55: 'Lotus',
+  56: 'Love in the mist',
+  57: 'Magnolia',
+  58: 'Mallow',
+  59: 'Marigold',
+  60: 'Mexican petunia',
+  61: 'Monkshood',
+  62: 'Moon orchid',
+  63: 'Morning glory',
+  64: 'Orange dahlia',
+  65: 'Osteospermum',
+  66: 'Passion flower',
+  67: 'Peruvian lily',
+  68: 'Petunia',
+  69: 'Pincushion flower',
+  70: 'Pink primrose',
+  71: 'Pink quill',
+  72: 'Pink-yellow dahlia',
+  73: 'Poinsettia',
+  74: 'Primula',
+  75: 'Prince of wales feathers',
+  76: 'Purple coneflower',
+  77: 'Red ginger',
+  78: 'Rose',
+  79: 'Ruby-lipped cattleya',
+  80: 'Siam tulip',
+  81: 'Silverbush',
+  82: 'Snapdragon',
+  83: 'Spear thistle',
+  84: 'Spring crocus',
+  85: 'Stemless gentian',
+  86: 'Sunflower',
+  87: 'Sweet pea',
+  88: 'Sweet william',
+  89: 'Sword lily',
+  90: 'Thorn apple',
+  91: 'Tiger lily',
+  92: 'Toad lily',
+  93: 'Tree mallow',
+  94: 'Tree poppy',
+  95: 'Trumpet creeper',
+  96: 'Wallflower',
+  97: 'Water lily',
+  98: 'Watercress',
+  99: 'Wild geranium',
+  100: 'Wild pansy',
+  101: 'Wild rose',
+  102: 'Windflower',
+  103: 'Yellow iris',
   
 
 
@@ -129,7 +129,7 @@ const MOBILENET_MODEL_PATH =
     // tslint:disable-next-line:max-line-length
     'model_tfjs';
 
-const IMAGE_SIZE = 128;
+const IMAGE_SIZE = 224;
 const TOPK_PREDICTIONS = 3;
 
 let mobilenet;
@@ -258,15 +258,24 @@ function showResults(imgElement, classes) {
     classElement.innerText = classes[i].className;
     row.appendChild(classElement);
 
-    // const predElement = document.createElement('div');
-    // classElement.className = 'cell';
-    // classElement.innerText = classes[i].pred;
-    // row.appendChild(classElement);
-
     const probsElement = document.createElement('div');
     probsElement.className = 'cell';
     probsElement.innerText = classes[i].probability.toFixed(3);
     row.appendChild(probsElement);
+
+    // const predElement = document.createElement('div');
+    // classElement.className = 'cell';
+    // classElement.innerText = classes[i].pred;
+    // row.appendChild(classElement);
+    var description = "";
+    for (var j = 0; j < jsonData.length; j++){
+      if (jsonData[j]["Flower Type"] === classes[i].className) {
+        description = jsonData[j]["Description"];}
+    }
+    const descriptionElement = document.createElement('div');
+    descriptionElement.className = 'cell';
+    descriptionElement.innerText = description;
+    row.appendChild(descriptionElement);
 
     probsContainer.appendChild(row);
   }
@@ -306,3 +315,15 @@ const status = msg => demoStatusElement.innerText = msg;
 const predictionsElement = document.getElementById('predictions');
 
 mobilenetDemo();
+
+async function fetchJSONData() {
+  try {
+    const response = await fetch('data.json'); 
+    jsonData = await response.json();
+    console.log('JSON data:', jsonData);
+    mobilenetDemo(); 
+  } catch (error) {
+    console.error('Error fetching JSON data:', error);
+  }
+}
+fetchJSONData();
