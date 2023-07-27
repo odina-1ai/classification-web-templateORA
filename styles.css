@@ -72,22 +72,6 @@ input[type="file"] {
     display: none;
 }
 
-  label{
-    display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
-  text-align: center;
-  cursor: pointer;
-  background-color: #95b6a2;
-  color: #fff;
-  border: 1px solid #95b6a2;
-  border-radius: 3px;
-    width: 15%;
-    font-size: 1em;
-
-    margin-top: 20px;
-  }
-
   label:hover{
     background-color: white;
     color: #95b6a2;
